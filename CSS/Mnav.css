@@ -1,0 +1,26 @@
+/* 모바일 메뉴 */
+#mnav {
+    background-color: yellow;
+    display: none;
+}
+#mnav .ham {
+    display: block;
+    color: black;
+
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    padding: 7px 16px;
+    cursor: pointer;
+}
+#mnav ul {
+    display: none;
+}
+
+/* 미디어 쿼리 */
+
+@media (max-width: 1024px) {
+    #mnav {
+        display: block;
+    }
+}

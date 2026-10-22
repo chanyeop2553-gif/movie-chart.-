@@ -1,0 +1,22 @@
+/* 레이아웃 */
+#header {
+    width: 100%;
+    border-bottom: 1px soild #c6c6c6;
+}
+#banner {
+    height: 600px;
+}
+#movie {
+    background-color: #c6c6c6;
+    padding: 24px;
+}
+#event {
+}
+#opening {
+}
+#new {
+}
+#help {
+}
+#footer {
+}
