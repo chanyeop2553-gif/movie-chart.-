@@ -146,6 +146,9 @@ footer_info ul li:last-child::after {
 }
 .footer_sns .tel {
     text-align: center;
+}
+
+.footer_sns .tel a {
     font-size: 18px;
 }
 
