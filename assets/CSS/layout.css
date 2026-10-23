@@ -1,0 +1,32 @@
+/* 레이아웃 */
+#header {
+    width: 100%;
+    border-bottom: 1px soild #c6c6c6;
+}
+#banner {
+    height: 600px;
+}
+#movie {
+    background-color: #c6c6c6;
+    padding: 24px;
+}
+#event {
+    background-color: #c6c6c6;
+    padding: 24px;
+    top: 0;
+}
+#opening {
+    background: url(../img/bg01.jpg) no-repeat center top;
+    background-size: cover;
+    padding: 24px;
+}
+#new {
+    padding: 24px;
+}
+#help {
+    padding: 12px;
+    padding-top: 0;
+}
+#footer {
+    background-color: #2b2b2b;
+}

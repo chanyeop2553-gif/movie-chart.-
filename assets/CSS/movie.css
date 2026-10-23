@@ -15,6 +15,7 @@
     width: 25%;
     text-align: center;
     border: 1px solid #9c9c9c;
+    margin-left: -1px;
 }
 .movie_title ul li a {
     display: block;
@@ -26,6 +27,12 @@
 .movie_title ul li.active a {
     background-color: #666;
     color: #fff;
+}
+.movie_chart {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1000;
 }
 
 .poster {
@@ -173,6 +180,13 @@
     text-align: center;
     background-color: #d9d9d9;
 }
+.infor .info_button a:hover {
+    background-color: #fff;
+    color: #391b6a;
+}
+.movie_chart .awiper .slider {
+    box-shadow: 0px 0px 1px #000;
+}
 
 /* 미디어 쿼리 */
 @media (max-width: 1300px) {
@@ -197,7 +211,7 @@
     }
     .movie h2.ir_so {
         position: static;
-        width: auto;
+        width: 100%;
         height: auto;
         line-height: normal;
         text-indent: 0;
@@ -239,24 +253,41 @@
 @media (max-width: 600px) {
     #movie {
         padding: 16px;
+        padding-right: 0;
+        position: relative;
     }
-    #movie .row {
-        padding: 0 16px;
-    }
-    .movie {
-        padding: 16px 0;
-    }
-    .movie_title ul li.active a {
-        margin-right: 20px;
-    }
+}
+#moive::after {
+    content: "";
+    width: 16px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#movie .row {
+    padding: 0 16px;
+    padding-right: 0;
+}
+.movie {
+    padding: 16px 0;
+}
+.movie_title ul li.active a {
+    margin-right: 20px;
 }
 
 @media (max-width: 480px) {
     #movie {
         padding: 12px;
+        padding-right: 0;
     }
     #movie .row {
         padding: 0 12px;
+        #movie::after {
+            width: 12px;
+            height: 500px;
+        }
     }
     .movie {
         padding: 12px 0;
@@ -264,6 +295,9 @@
     .movie_title ul li.active a {
         margin-right: 10px;
         font-size: 14px;
+    }
+    .movie h2.ir_so {
+        width: calc(100% - 24px);
     }
 }
 
