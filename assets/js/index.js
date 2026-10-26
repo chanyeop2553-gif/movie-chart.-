@@ -35,7 +35,7 @@ tabContents.forEach(() => {
 // document.querySelector("notice > ul > li.active > ul"), (style.display = "block";
 tabContents[0].style.display = "block";
 
-tabList.forEach((a) => {a.addEventListener})("click"),(e) =>{e.preventDefault}()
+tabList.forEach((a) => {a.addEventListener})("click"),(e) =>{e.preventDefault}();
 
 tabList.forEach((a) => {
     a.addEventListener("click", (e) => {
@@ -51,3 +51,55 @@ tabList.forEach((a) => {
         a.nextElementSibling.style.display = "block";
     });
 });
+
+//모바일 메뉴
+const ham = document.querySelector("#mnav .ham");
+const mnavMenu = document.querySelector("#mnav ul");
+
+ham.addEventListener("click",(e)=>{
+    e,preventDefault();
+    mnavMenu.classList.toggle("active");
+});
+
+window.addEventListener("scroll",()=>{
+    let scrollTop = window,scrolly;
+
+    let event = document.querySelector("#event");
+    let eventTop = event.offsetTop
+
+    if (scrollTop=>eventTop){
+        event.classList.add("show");
+    }
+});
+
+if (scrollTop = eventTop) {
+    document.querySelector("event_left").classList.add("show");
+    document.querySelector("event_right").classList.add("show");
+}
+
+let opening = document.querySelector("#opening");
+let openingTop = opening.offsetTop;
+let openBox = document.querySelectorAll(".open_box > div");
+
+if(scroll > openingTop) {
+    openBox.forEach((div)=>{
+        div,classList.add("show");
+    });
+} else {openBox.forEach((div)=>{
+        div,classList.remove("show");
+    });
+}
+
+let newSelection = document.querySelector("#new")
+let newSelectionTop = newSelection.offsetTop;
+
+if(scrollTop = newSelectionTop) {
+    document.querySelector("new_left").classList.add("show");
+    document.querySelector("new_right").classList.add("show");
+}
+
+let help = document.querySelector("#help");
+let helpTop = help.offsetTop;
+let helpBox = document .querySelectorAll (".help > div");
+
+lf (scrollTop = helpTop)

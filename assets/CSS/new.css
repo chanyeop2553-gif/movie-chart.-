@@ -21,6 +21,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all 0.33s ease-in-out;
+}
+.new_left.show {
+    transform: translateX(0);
+    opacity: 1;
 }
 .new_right {
     width: 400px;
@@ -117,7 +125,7 @@
     padding-right: 10px;
     margin-right: 10px;
 }
-bar::after {
+.bar::after {
     content: "";
     width: 1px;
     height: 10px;

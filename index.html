@@ -19,6 +19,10 @@
     />
     <link rel="stylesheet" href="../assets/CSS/myswiper.css">
     
+    <!-- 파비콘 달기 -->
+    <link rel="shortcut icon" href="assets/icon/스크린샷-2026-10-26-095514.ico" />
+    <link rel="shortcut icon" href="assets/icon/스크린샷 2026-10-26 095514.png" />
+
 
     <!-- 공통 css -->
     <link rel="stylesheet" href="../assets/CSS/font.css">
@@ -334,7 +338,8 @@
           <h2>새로운 영화</h2>
           <div class="new_inner">
             <div class="new_left">
-              <div class="play"><svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="play" id="showTrailer" data-youtube="acUIyAfieHE">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="60" cy="60" r="60" fill="white" fill-opacity="0.46"/>
 <path d="M79 56.0359C81.6667 57.5755 81.6667 61.4245 79 62.9641L52.75 78.1195C50.0833 79.6591 46.75 77.7346 46.75 74.6554L46.75 44.3446C46.75 41.2654 50.0833 39.3409 52.75 40.8805L79 56.0359Z" fill="white"/>
 </svg></div>
@@ -574,7 +579,7 @@
               <li class="icon s6">
                 <a href="#"><span class="ir_pm">메세지</span></a></li>
             </ul>
-            <div class=""tel:1544-0070">
+            <div class="tel:1544-0070">
               <href="tel:1544-0070"><em>1544-0070</em></a>
             </div>
           </div>
@@ -585,8 +590,21 @@
   </footer>
   <!-- footer -->
 
+  <!-- 트레일러 -->
+<aside id="blackout" class="overlay is-hidden" role="complementary" aria-hidden="true">
+ <div id="trailerModal" class="modal">
+   <div id="trailer"></div>
+   <!--Youtube 플레이어로 대체되는 부분-->
+ </div>
+ <button id="hideTrailer" class="modal_close" type="button">닫기</button>
+</aside>
+<!-- //트레일러 -->
+
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
 
-  <script></script>
+  <script src="assets/js/moive.js"></script>
+  <script src="assets/js/mySwiper.js"></script>
+  <script src="assets/js/index.js"></script>
 </body>
 </html>
