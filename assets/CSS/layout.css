@@ -3,8 +3,8 @@
     width: 100%;
     background-color: #ffffffa1;
     border-bottom: 1px soild #c6c6c6;
-    backdrop-filter: blur(30px);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 5px 5px rgba(83, 83, 83, 0.637);
     position: fixed;
     top: 0;
     left: 0;
@@ -20,7 +20,7 @@
 #event {
     background-color: #c6c6c6;
     padding: 24px;
-    top: 0;
+    padding-top: 0;
 }
 #opening {
     background: url(../img/bg01.jpg) no-repeat center top;

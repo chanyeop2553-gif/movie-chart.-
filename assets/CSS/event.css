@@ -1,8 +1,9 @@
 .event {
     padding: 100px 0;
+    padding-top: 0;
 }
 .event h2 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -11,8 +12,7 @@
 }
 .event_inner {
     display: flex;
-    /* justify-content: space-between; */
-    gap: 2.45%;
+    justify-content: space-between;
 }
 .event_left {
     width: 66%;
@@ -30,32 +30,26 @@
 .event_box1 {
     width: 100%;
     margin-bottom: 2.25%;
+    box-shadow: 0 0 10px #616161b9;
 }
 .event_box2,
 .event_box3 {
     width: 50%;
+    box-shadow: 0 0 10px #616161b9;
 }
 
 .event_right {
-    width: 33%;
-
+    width: 32%;
+    box-shadow: 0 0 10px #616161b9;
     transform: translateY(600px);
     opacity: 0;
-    transition: all 0.55s ease-in-out;
+    transition: all 0.33s 0.2s ease-in-out;
 }
 .event_right.show {
     transform: translateY(0);
     opacity: 1;
 }
-#event {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: all 0.3s;
-}
-#event.show {
-    opacity: 1;
-    transform: translateY(0);
-}
+
 /* 미디어 쿼리 */
 @media (max-width: 1300px) {
     .conatiner {

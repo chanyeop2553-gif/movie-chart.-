@@ -34,6 +34,20 @@
     width: 25%;
     color: #fff;
     border: 1px soild #ffffff94;
+
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.33s cubic-bezier(0.59, 0.05, 0.01, 1.4);
+}
+.open_box > div:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.open_box > div:nth-child(3) {
+    transition-delay: 0.4s;
+}
+.open_box > div.bounce {
+    transform: scale(1);
+    opacity: 1;
 }
 .open_box > div h3 {
     display: inline-block;
@@ -42,9 +56,8 @@
     padding: 10px 20px;
     background-color: #38116a;
     border: 1px solid #6f2bc7;
-    margin-top: -20px;
+    margin-top: -25px;
 }
-
 .open_box > div p {
     font-size: 23px;
     font-weight: 300;
@@ -60,36 +73,35 @@
 
 /* 미디어 쿼리 */
 @media (max-width: 1300px) {
-    .conatiner {
+    .container {
         width: 100%;
     }
 }
 
 @media (max-width: 1024px) {
 }
-
 @media (max-width: 960px) {
     .opening {
-        padding: 24px 0;
+        padding: 50px 0;
     }
     .opening h2 span.grand {
-        display: inline-block;
         width: 302px;
         height: 35px;
         background-position: 0 -168px;
     }
+    .opening .date {
+        font-size: 25px;
+    }
+    .opening .desc {
+        font-size: 20px;
+    }
     .open_box > div {
         width: 30%;
-
-        .opening .date {
-            font: size 30px;
-        }
-        .opening .desc {
-            font-size: 20px;
-        }
+    }
+    .open_box > div p {
+        font-size: 20px;
     }
 }
-
 @media (max-width: 768px) {
     .opening {
         padding: 24px 0;
@@ -98,26 +110,21 @@
         width: 183px;
         height: 21px;
         background-position: 0 -203px;
-
-        .opening .date {
-            font-size: 22px;
-        }
-
-        .opening .desc {
-            word-break: keep-all;
-            margin-bottom: 0;
-            line-height: 1.1;
-        }
-
-        .open_box {
-            display: none;
-        }
+    }
+    .opening .date {
+        font-size: 22px;
+    }
+    .opening .desc {
+        word-break: keep-all;
+        margin-bottom: 0;
+        line-height: 1.1;
+    }
+    .open_box {
+        display: none;
     }
 }
-
 @media (max-width: 600px) {
 }
-
 @media (max-width: 480px) {
     .opening .date {
         font-size: 18px;
@@ -126,6 +133,5 @@
         font-size: 18px;
     }
 }
-
 @media (max-width: 320px) {
 }

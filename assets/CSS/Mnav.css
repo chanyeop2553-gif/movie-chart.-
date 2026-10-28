@@ -11,7 +11,6 @@
 #mnav .ham {
     display: block;
     color: black;
-
     font-size: 30px;
     position: absolute;
     right: 0;
@@ -35,7 +34,7 @@
 }
 
 #mnav ul li {
-    padding: 24px;
+    padding: 18px;
     border-bottom: 1px soild #5619a7;
     text-align: center;
 }

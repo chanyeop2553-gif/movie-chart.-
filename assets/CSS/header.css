@@ -3,7 +3,10 @@
     display: flex;
     justify-content: space-between;
 }
+
 .header h1 em {
+    display: inline-block;
+    padding: 12px 8px 8px 0;
 }
 .header h1 em img {
     width: 155px;
@@ -33,20 +36,18 @@
     font-size: 17px;
     font-weight: 700;
     padding: 19px 10px;
-    color: blueviolet;
+    color: #444444;
     transition: all 0.3s;
 }
 .header .nav ul li a :hover {
-    background-color: gray;
+    background-color: #e3d3f9;
+    color: #38116a;
 }
 
 /* 미디어 쿼리 */
 @media (max-width: 1300px) {
     .container {
         width: 100%;
-    }
-    .header h1 em {
-        padding: 0;
     }
     #header .row {
         padding-right: 0;
@@ -64,10 +65,12 @@
     .header {
         justify-content: center;
     }
+    .header h1 em {
+        padding-right: 0;
+    }
     .header h1 strong {
-        display: inline-block;
         position: absolute;
-        top: 23px;
+        top: 20px;
         left: 24px;
     }
     .nav {
