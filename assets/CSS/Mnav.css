@@ -1,5 +1,5 @@
 /* 모바일 메뉴 */
-#mnav {
+#mNav {
     background-color: yellow;
     width: 100%;
     display: none;
@@ -8,16 +8,17 @@
     top: 0;
     z-index: 300;
 }
-#mnav .ham {
+#mNav .ham {
     display: block;
-    color: black;
+    color: #000;
     font-size: 30px;
     position: absolute;
     right: 0;
     padding: 7px 16px;
     cursor: pointer;
 }
-#mnav ul {
+
+#mNav ul {
     /* display: none; */
     width: 100%;
     height: 100vh;
@@ -26,29 +27,28 @@
     top: 57px;
     background-color: #38116a;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s cubic-bezier(0.81, -0.02, 0.18, 1);
 }
-
-#mnav ul.active {
+#mNav ul.active {
     transform: translateX(0);
 }
-
-#mnav ul li {
+#mNav ul li {
     padding: 18px;
-    border-bottom: 1px soild #5619a7;
+    border-bottom: 1px solid #5619a7;
     text-align: center;
 }
-#mnav ul li a {
+#mNav ul li a {
     font-size: 20px;
     color: #9666d6;
 }
-#mnav ul li a:hover {
+#mNav ul li a:hover {
     color: #fff;
 }
+
 /* 미디어 쿼리 */
 
 @media (max-width: 1024px) {
-    #mnav {
+    #mNav {
         display: block;
     }
 }

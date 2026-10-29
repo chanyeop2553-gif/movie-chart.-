@@ -50,8 +50,8 @@ select,
 button,
 table {
     font-family:
-        "Pretendard", "Noto Sans", "Nanum Gothic", AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum,
-        "돋움", sans-serif;
+        "Pretendard", "Noto Sans", "Nanum Gothic", AppleSDGothicNeo-Regular, "Malgun Gothic",
+        "맑은 고딕", dotum, "돋움", sans-serif;
     color: #222;
     font-size: 13px;
     line-height: 1.5;
@@ -136,6 +136,7 @@ img {
     line-height: 0;
     text-indent: -9999px;
 } /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때(Screen Out*/
+
 /* input style */
 input {
     background-image: none;
@@ -151,7 +152,6 @@ input[type="email"] {
     -webkit-appearance: none;
     border-radius: 0;
 }
-
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
@@ -163,6 +163,7 @@ input:checked[type="checkbox"] {
 input:focus {
     outline: none;
 }
+
 select {
     -webkit-appearance: none !important;
     appearance: none !important;

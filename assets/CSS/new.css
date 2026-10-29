@@ -47,7 +47,7 @@
 }
 .new_right .title {
     font-size: 28px;
-    color: black;
+    color: #000;
 }
 .new_right .release {
     font-size: 15px;
@@ -73,6 +73,7 @@
 .new_right .summary .age {
     padding-bottom: 10px;
 }
+
 .new_right .summary .desc {
     margin-bottom: 20px;
     height: 108px;
@@ -115,17 +116,17 @@
     box-sizing: border-box;
     width: 49%;
     text-align: center;
-    background-color: yellow;
+    background-color: red;
 }
-.new_right .btn a .white {
+.new_right .btn a.white {
     background-color: #fff;
     color: #38116a;
     border: 1px solid #38116a;
 }
-.new_right .btn a .purple {
+.new_right .btn a.purple {
     background-color: #38116a;
     color: #fff;
-    border: 1px solid #38116a;
+    border: 1px solid #6f2bc7;
 }
 
 .bar {
@@ -146,14 +147,13 @@
 
 /* 미디어 쿼리 */
 @media (max-width: 1300px) {
-    .conatiner {
+    .container {
         width: 100%;
     }
 }
 
 @media (max-width: 1024px) {
 }
-
 @media (max-width: 960px) {
     .new_inner {
         flex-direction: column;
@@ -168,14 +168,13 @@
         width: 100%;
     }
 }
-
 @media (max-width: 768px) {
     #new {
-        background-color: #d9d9d9;
+        background: #d9d9d9;
     }
-    #new.row {
+    #new .row {
         background-color: #fff;
-        padding: 0, 24px;
+        padding: 0 24px;
     }
     .new {
         padding: 24px 0;
@@ -186,7 +185,6 @@
         margin-bottom: 10px;
     }
 }
-
 @media (max-width: 600px) {
     #new {
         padding: 16px;
@@ -200,7 +198,7 @@
     .new_left {
         height: 200px;
     }
-    new_left .play svg {
+    .new_left .play svg {
         width: 80px;
         height: 80px;
     }
@@ -221,7 +219,7 @@
         padding-bottom: 5px;
     }
     .new_right .summary .desc {
-        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
     .new_right .select .s1 {
         width: 100%;
@@ -231,7 +229,6 @@
         width: 100%;
     }
 }
-
 @media (max-width: 480px) {
     #new {
         padding: 12px;

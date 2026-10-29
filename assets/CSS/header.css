@@ -1,4 +1,4 @@
-/* 헤더영역 */
+/* 헤더 영역 */
 .header {
     display: flex;
     justify-content: space-between;
@@ -16,21 +16,19 @@
     position: relative;
     top: -7px;
 }
-
 .header h1 strong img {
     width: 126px;
 }
 
 .header .nav ul {
     display: flex;
-    border-left: 1px soild #c6c6c6;
+    border-left: 1px solid #c6c6c6;
 }
 .header .nav ul li {
     width: 103px;
-    border-right: 1px soild #c6c6c6;
+    border-right: 1px solid #c6c6c6;
     text-align: center;
 }
-
 .header .nav ul li a {
     display: block;
     font-size: 17px;
@@ -39,7 +37,7 @@
     color: #444444;
     transition: all 0.3s;
 }
-.header .nav ul li a :hover {
+.header .nav ul li a:hover {
     background-color: #e3d3f9;
     color: #38116a;
 }

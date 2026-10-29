@@ -1,3 +1,4 @@
+/* 이벤트 영역 */
 .event {
     padding: 100px 0;
     padding-top: 0;
@@ -21,7 +22,7 @@
 
     transform: translateY(600px);
     opacity: 0;
-    transition: all 0.33s ease-in-out;
+    transition: all 0.33s cubic-bezier(0, 0.69, 0.38, 1.02);
 }
 .event_left.show {
     transform: translateY(0);
@@ -41,9 +42,10 @@
 .event_right {
     width: 32%;
     box-shadow: 0 0 10px #616161b9;
+
     transform: translateY(600px);
     opacity: 0;
-    transition: all 0.33s 0.2s ease-in-out;
+    transition: all 0.33s 0.2s cubic-bezier(0, 0.69, 0.38, 1.02);
 }
 .event_right.show {
     transform: translateY(0);
@@ -52,20 +54,18 @@
 
 /* 미디어 쿼리 */
 @media (max-width: 1300px) {
-    .conatiner {
+    .container {
         width: 100%;
     }
 }
 
 @media (max-width: 1024px) {
 }
-
 @media (max-width: 960px) {
 }
-
 @media (max-width: 768px) {
-    #event.row {
-        padding: 0, 24px;
+    #event .row {
+        padding: 0 24px;
         background-color: #fff;
     }
     .event {
@@ -83,7 +83,6 @@
         display: none;
     }
 }
-
 @media (max-width: 600px) {
     #event {
         padding: 16px;

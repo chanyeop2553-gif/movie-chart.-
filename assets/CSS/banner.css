@@ -1,4 +1,4 @@
-/* banner 영역 */
+/* 배너 영역 */
 .banner_menu {
     width: 100%;
 
@@ -31,13 +31,14 @@
     margin-right: 10px;
 }
 .bm_left ul li.total a {
-    border: 1px soild #fff;
+    border: 1px solid #fff;
     padding: 4px 10px 3px 10px;
     font-size: 14px;
 }
 .bm_left ul li.total a .fa-bars {
     padding-right: 5px;
 }
+
 .bm_left ul li a:hover {
     color: #6f2bc7;
     transition: all 0.3s;
@@ -45,7 +46,6 @@
 .bm_left ul li.total a:hover {
     background-color: #fff;
 }
-
 .bm_right {
     display: flex;
     padding-right: 16px;
@@ -55,28 +55,25 @@
 }
 .bm_right ul li {
 }
-
 .bm_right ul li a {
     display: block;
     color: #fff;
     padding: 7px 14px;
     letter-spacing: -1px;
 }
-
 .bm_right ul li a:hover {
     color: #6f2bc7;
     transition: all 0.3s;
 }
+
 .bm_right ul:nth-child(2) {
 }
-
 .bm_right ul:nth-child(2) li {
     margin-left: 20px;
 }
 .bm_right ul:nth-child(2) li a {
     width: 103px;
     text-align: center;
-    border: 1px solid #fff;
     padding: 7px 15px;
 
     background-color: #fff;
@@ -91,27 +88,26 @@
     color: #fff;
     border: 1px solid #6f2bc7;
 }
-
 .bm_right ul:nth-child(2) li a:hover {
     background-color: #6f2bc7;
     color: #fff;
-    border: 1px soild #38116a;
+    border: 1px solid #38116a;
 }
 
 /* line */
 .line {
     position: relative;
 }
-.line ::after {
+.line::after {
     content: "";
     width: 1px;
     height: 14px;
     background-color: #fff;
     position: absolute;
     top: 8px;
-    left: 0;
+    right: 0;
 }
-.bm_right line ::after {
+.bm_right .line::after {
     top: 12px;
 }
 
@@ -163,6 +159,7 @@
     background: url(../img/main_slider08.webp) no-repeat center top;
     background-size: cover;
 }
+
 .slider h2 {
     font-size: 62px;
     font-weight: 500;
@@ -181,7 +178,6 @@
     font-size: 27px;
     padding-top: 55px;
 }
-
 .slider h2::after {
     content: "";
     width: 420px;
@@ -193,14 +189,14 @@
 }
 /* 미디어 쿼리 */
 @media (max-width: 1300px) {
-    .conatiner {
+    .container {
         width: 100%;
     }
 }
 
 @media (max-width: 1024px) {
     .banner_menu {
-        justify-content: flex-end end;
+        justify-content: flex-end;
     }
     .bm_left {
         display: none;
@@ -209,7 +205,6 @@
         display: none;
     }
 }
-
 @media (max-width: 960px) {
     .slider .swiper-wrapper {
         height: 500px;
@@ -227,12 +222,11 @@
         padding-top: 30px;
         margin-left: 30px;
     }
-    .slider h2 ::after {
+    .slider h2::after {
         width: 250px;
         bottom: -15px;
     }
 }
-
 @media (max-width: 768px) {
     .bm_right ul:nth-child(2) li {
         margin-left: 10px;
@@ -241,7 +235,7 @@
     .bm_right ul:nth-child(2) li.purple a {
         width: 70px;
         padding: 5px 10px;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgb(0, 0, 0, 0.6);
         color: #fff;
         border: 1px solid #fff;
     }
@@ -253,7 +247,6 @@
     .slider .swiper-wrapper {
         height: 400px;
     }
-
     .slider h2 {
         font-size: 30px;
         margin-top: 150px;
@@ -267,14 +260,14 @@
         padding-top: 25px;
         margin-left: 10px;
     }
-    .slider h2 ::after {
+    .slider h2::after {
         width: 220px;
         bottom: -15px;
     }
 }
 
 @media (max-width: 480px) {
-    .banner_meun {
+    .banner_menu {
         top: 10px;
     }
     .slider .swiper-wrapper {
@@ -291,7 +284,7 @@
         font-size: 16px;
         padding-top: 15px;
     }
-    .slider h2 ::after {
+    .slider h2::after {
         width: 190px;
         bottom: -10px;
     }
